@@ -13,9 +13,9 @@ void OnProjectLoad (void) {
   Project.SetDevice ("STM32F303RE");
   Project.SetHostIF ("USB", "");
   Project.SetTargetIF ("SWD");
-  Project.SetTIFSpeed ("4 MHz");
+  Project.SetTIFSpeed ("10 MHz");
   Project.AddSvdFile ("Cortex-M4.svd");
-  Project.AddSvdFile ("/opt/SEGGER/jlinkdebugger/2.14.9/Config/CPU/Cortex-M4F.svd");
+  Project.AddSvdFile ("/opt/SEGGER/ozone/2.22.15/Config/CPU/Cortex-M4F.svd");
   File.Open ("/home/elmot/projects/f3_blink/build/Debug/f3_blink.elf");
 }
 
